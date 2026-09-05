@@ -1,0 +1,11 @@
+---
+description: Keep tech.md updated when the project technology stack changes
+alwaysApply: true
+---
+
+# Tech Stack Documentation
+
+- Keep `tech.md` as the source of truth for major technologies and versions.
+- Whenever dependencies, SDK levels, Gradle, Kotlin, Android Gradle Plugin, Java toolchain, storage, testing, or automation technologies change, update `tech.md` in the same work.
+- Mention the config file where each version is declared so the user can learn the project by reading it.
+- Do not introduce major new libraries without adding them to `tech.md`.

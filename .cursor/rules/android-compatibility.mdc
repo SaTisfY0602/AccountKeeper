@@ -1,0 +1,14 @@
+---
+description: Android compatibility targets for AccountKeeper
+alwaysApply: true
+---
+
+# Android Compatibility
+
+- Treat vivo X200 Pro running OriginOS 6 as a primary target device.
+- OriginOS 6 is based on Android 16, so keep the app compatible with API 36.
+- Prefer `compileSdk` and `targetSdk` 36 or newer when the Android Gradle Plugin supports it.
+- Keep broad device support unless there is a concrete feature reason to narrow it; do not raise `minSdk` without explaining the tradeoff.
+- Current baseline is `minSdk 23` so the app can support Android 6.0 and newer.
+- When using Java APIs that are newer than old Android releases, keep core library desugaring enabled.
+- Verify changes on the available emulator before considering Android compatibility work complete.
